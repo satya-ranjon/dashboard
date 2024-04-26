@@ -6,7 +6,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Topbar = () => {
   return (
-    <div className=" pr-4 flex justify-between items-center bg-neutral-50">
+    <div className=" md:pr-4 flex flex-col md:flex-row justify-between items-center bg-neutral-50">
       <div className=" w-full flex justify-start items-center">
         <div className=" bg-white cursor-pointer flex justify-start items-center gap-2 px-3 py-2 border-x-2 border-b-2 border-t-[3px] border-t-cyan-500 text-neutral-800">
           <FaSearch />
@@ -21,22 +21,22 @@ const Topbar = () => {
           <span className=" font-semibold text-xl">Details</span>
         </div>
       </div>
-      <div className="flex justify-end items-center">
-        <div className="cursor-pointer flex justify-start items-center gap-3 px-3 py-[10px] border-r-2 border-b-2 border-t-[3px] border-t-none text-neutral-500">
+      <div className="flex w-full md:w-fit justify-end items-center">
+        <div className="cursor-pointer w-full md:w-fit flex justify-start items-center gap-3 px-3 py-[10px] border-r-2 border-l-2 md:border-l-0 border-b-2 md:border-t-[3px] border-t-none text-neutral-500">
           <FaPencil className=" text-2xl" />
           <Switch id="airplane-mode" />
         </div>
-        <div className="cursor-pointer flex justify-start items-center gap-3 px-3 py-[10px] border-r-2 border-b-2 border-t-[3px] border-t-none text-neutral-500">
+        <div className="cursor-pointer flex justify-start items-center gap-3 px-3 py-[10px] border-r-2 border-b-2 md:border-t-[3px] border-t-none text-neutral-500">
           <FaUser className=" text-2xl" />
           <Switch id="airplane-mode" />
         </div>
-        <div className="cursor-pointer  px-3 py-[10px] border-r-2 border-b-2 border-t-[3px] border-t-none text-neutral-500">
+        <div className="cursor-pointer  px-3 py-[10px] border-r-2 border-b-2 md:border-t-[3px] border-t-none text-neutral-500">
           <IoIosArrowBack className=" text-2xl" />
         </div>
-        <div className="cursor-pointer  px-3 py-[10px] border-r-2 border-b-2 border-t-[3px] border-t-none text-neutral-500">
+        <div className="cursor-pointer  px-3 py-[10px] border-r-2 border-b-2 md:border-t-[3px] border-t-none text-neutral-500">
           <IoIosArrowForward className=" text-2xl" />
         </div>
-        <div className="cursor-pointer  px-3 py-[10px] border-r-2 border-b-2 border-t-[3px] border-t-none text-neutral-500">
+        <div className="cursor-pointer  px-3 py-[10px] border-r-2 border-b-2 md:border-t-[3px] border-t-none text-neutral-500">
           <FaExpandAlt className=" text-2xl" />
         </div>
       </div>

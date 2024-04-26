@@ -64,7 +64,7 @@ export const DropDownMenuItem = ({
   const [isOpen, setIsOpen] = React.useState(false);
   const height = Array.isArray(children)
     ? `h-[${children.length * 48}px]`
-    : "h-[48px]";
+    : "h-[0px]";
 
   return (
     <>

@@ -25,7 +25,7 @@ import {
 const FilterOptions = () => {
   return (
     <div className="mt-3">
-      <div className="flex justify-between items-center  ">
+      <div className="flex flex-col md:flex-row  justify-start md:justify-between items-center gap-2 md:gap-0 ">
         <div className=" flex justify-start items-center gap-3">
           <div className="flex justify-start items-center rounded-sm overflow-hidden">
             <button className="bg-[#577d57] px-3 py-2 text-white text-lg font-semibold flex justify-start items-center">
@@ -51,7 +51,7 @@ const FilterOptions = () => {
         </div>
       </div>
       <div className="mt-3">
-        <div className=" flex justify-between items-center">
+        <div className=" flex flex-col md:flex-row  justify-start md:justify-between items-center gap-2 md:gap-0">
           <div className=" flex justify-start items-center gap-4">
             <div className=" flex justify-start items-center">
               <Select>

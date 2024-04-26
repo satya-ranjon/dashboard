@@ -115,6 +115,7 @@ const Sidebar = () => {
       ],
     },
   ];
+
   return (
     <div className=" w-full h-screen bg-neutral-950 text-white ">
       <div className="flex px-5 py-5 items-center justify-start font-semibold text-2xl gap-3 mb-4">
@@ -123,12 +124,12 @@ const Sidebar = () => {
       </div>
       <div className="">
         {items.map((item, index) => (
-          <>
+          <React.Fragment key={index}>
             {item.items ? (
-              <DropDownMenuItem key={index} label={item.name} icon={item.icon}>
+              <DropDownMenuItem label={item.name} icon={item.icon}>
                 {item.items.map((subItem, index) => (
                   <SubMenuItem
-                    key={index}
+                    key={index + 2}
                     label={subItem.name}
                     url={subItem.url}
                   />
@@ -136,7 +137,6 @@ const Sidebar = () => {
               </DropDownMenuItem>
             ) : (
               <MenuItem
-                key={index}
                 label={item.name}
                 url={item.url}
                 icon={item.icon}
@@ -144,7 +144,7 @@ const Sidebar = () => {
                 badgeColor={item.badgeColor}
               />
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
     </div>

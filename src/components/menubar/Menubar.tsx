@@ -15,7 +15,7 @@ const Menubar = ({ onClick }: { onClick?: () => void }) => {
             className=" px-[2px] py-[1px] w-fit rounded-sm bg-black text-white text-2xl cursor-pointer ">
             <GiHamburgerMenu />
           </div>
-          <span className=" text-white flex justify-start items-center gap-2">
+          <span className="hidden md:flex text-white  justify-start items-center gap-2">
             Properties <MdDoubleArrow /> log term
           </span>
         </div>

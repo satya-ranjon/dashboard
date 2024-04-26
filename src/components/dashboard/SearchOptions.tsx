@@ -12,15 +12,15 @@ import { LuPlusSquare, LuMinusSquare } from "react-icons/lu";
 
 const SearchOptions = () => {
   return (
-    <div className="flex justify-between items-center gap-5 bg-white p-3 py-5 border-x-2 border-b-2">
+    <div className="flex flex-col lg:flex-row justify-between items-center gap-5 bg-white p-3 py-5 border-x-2 border-b-2">
       <div className="w-full space-y-4">
-        <div className=" w-full flex justify-start items-center gap-5">
-          <div className="fit">
+        <div className=" w-full flex flex-col md:flex-row justify-start items-center gap-5">
+          <div className="w-full md:w-fit">
             <Label className=" text-lg text-neutral-600" htmlFor="Search">
               Search
             </Label>
             <Select>
-              <SelectTrigger className="w-[180px] ">
+              <SelectTrigger className="w-full md:w-[180px] ">
                 <SelectValue placeholder="Everywhere" />
               </SelectTrigger>
               <SelectContent>
@@ -47,7 +47,7 @@ const SearchOptions = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full flex justify-start items-center gap-5">
+        <div className=" w-full flex flex-col md:flex-row justify-start items-center gap-5">
           <div className="w-full">
             <Label className=" text-lg text-neutral-600" htmlFor="Search">
               Bedrooms
@@ -109,7 +109,7 @@ const SearchOptions = () => {
             </Select>
           </div>
         </div>
-        <div className=" w-full flex justify-start items-center gap-5">
+        <div className=" w-full flex flex-col md:flex-row justify-start items-center gap-5">
           <div className="w-full">
             <Label className=" text-lg text-neutral-600" htmlFor="price_from">
               Price from

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className=" m-4">
       <Topbar />
-      <ScrollArea className="h-[765px] w-full pr-4 ">
+      <ScrollArea className="h-[765px] w-full md:pr-4 ">
         <SearchOptions />
         <FilterOptions />
         <Propertys />
