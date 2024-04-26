@@ -62,6 +62,9 @@ export const DropDownMenuItem = ({
   children: React.ReactNode;
 }) => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const height = Array.isArray(children)
+    ? `h-[${children.length * 48}px]`
+    : "h-[48px]";
 
   return (
     <>
@@ -80,7 +83,12 @@ export const DropDownMenuItem = ({
           <CiSquarePlus className=" text-lg" />
         )}
       </div>
-      {isOpen && <div className=" bg-neutral-800">{children}</div>}
+      <div
+        className={`bg-neutral-800 overflow-hidden duration-300 transition-all ${
+          isOpen ? `${height}` : "h-0"
+        }`}>
+        {children}
+      </div>
     </>
   );
 };

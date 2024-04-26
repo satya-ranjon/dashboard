@@ -116,7 +116,7 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className=" w-full h-screen bg-neutral-950 text-white">
+    <div className=" w-full h-screen bg-neutral-950 text-white ">
       <div className="flex px-5 py-5 items-center justify-start font-semibold text-2xl gap-3 mb-4">
         <Image src="/house.png" alt="logo" width={32} height={32} />
         <span>inmobalia</span>
