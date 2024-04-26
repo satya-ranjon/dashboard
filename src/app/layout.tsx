@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(true);
   const [isSmSidebarOpen, setIsSmSidebarOpen] = React.useState(false);
-  const [width, setWidth] = React.useState(0);
+  const [width, setWidth] = React.useState(1025);
 
   const handleSidebar = () => {
     setIsSidebarOpen((prev) => !prev);
@@ -43,7 +43,7 @@ export default function RootLayout({
             className={`  ${
               isSidebarOpen ? "xl:w-72" : "w-0"
             } w-0 duration-300 transition-all overflow-hidden ${
-              width < 1025 && `fixed w-0 ${isSmSidebarOpen ? " w-72" : "w-0"}`
+              width < 1025 ? `fixed ${isSmSidebarOpen && " w-72"}` : ""
             } top-16 z-50`}>
             <Sidebar />
           </div>
