@@ -6,7 +6,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Topbar = () => {
   return (
-    <div className=" flex justify-between items-center bg-neutral-50">
+    <div className=" pr-4 flex justify-between items-center bg-neutral-50">
       <div className=" w-full flex justify-start items-center">
         <div className=" bg-white cursor-pointer flex justify-start items-center gap-2 px-3 py-2 border-x-2 border-b-2 border-t-[3px] border-t-cyan-500 text-neutral-800">
           <FaSearch />
